@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maneesh Gallery</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       
+        <link rel="stylesheet" href="index1.css" />
+        <script src="Maneesh_gallery.js"></script>
+        <style>
+            .box {
+  position: relative;
+  width: 110%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+
+
+.buttonclick {
+    
+  color: white;
+  font-size: 16px;
+  padding: 16px 16px;
+  border: 0px solid #e7e7e7;
+
+}
+        </style>
+    </head>
+    <body  onload= "load_images()">
+        <header id="header"class="alt skel-layers-fixed">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="main" class="wrapper style1">
+            <header class="major">
+                <h2>Gallery</h2>
+                
+            </header>
+            <div class="row"> 
+              <div class="column" id="imagesviajs">
+                
+              </div>
+             
+            </div>
+            
+			
+                        
+    </body>
+</html>
